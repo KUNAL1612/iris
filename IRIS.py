@@ -30,6 +30,7 @@ grr=pd.scatter_matrix(iris_dataframe, c=y_train, figsize=(15,15), marker='o',his
 
 from sklearn.neighbors import KNeighborsClassifier
 
+#considering only one neighbour
 knn=KNeighborsClassifier(n_neighbors=1)
 
 knn.fit(X_train,y_train)
