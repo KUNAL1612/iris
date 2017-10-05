@@ -4,6 +4,9 @@ Created on Tue Sep 19 00:17:51 2017
 
 @author: Kunal
 """
+
+#importing necessary modules
+
 import mglearn
 import numpy as np
 import pandas as pd
@@ -13,6 +16,7 @@ from sklearn.datasets import load_iris
 iris_dataset=load_iris()
 
 
+#split the test and training data
 
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(iris_dataset['data'],iris_dataset['target'],random_state=0)
